@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="A curated collection of client-side Dota 2 mods by ripDZL.">
+  <title>Dota 2 Mods | ripDZL</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="catalog-data.js" defer></script>
+  <script src="catalog.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#library">Skip to mod library</a>
+  <header class="topbar" id="top">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top">ripDZL</a>
+      <nav aria-label="Main navigation">
+        <a href="#library">Mod library</a>
+        <a href="#install">Installation</a>
+        <a class="github" href="https://github.com/ripDZL/Dota-2-Mods">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="library" id="library" aria-labelledby="library-title">
+      <div class="wrap">
+        <div class="library-heading">
+          <div>
+            <p class="eyebrow">MOD COLLECTION</p>
+            <h1 id="library-title">Dota 2 Mods</h1>
+            <p>Heroes of Newerth conversions, custom terrain, rank medals, effects, and audio packs.</p>
+          </div>
+          <label class="search">
+            <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>
+            <input type="search" id="search" placeholder="Search mods…" aria-label="Search mods">
+          </label>
+        </div>
+        <div class="catalog-layout">
+          <aside class="catalog-sidebar" aria-label="Mod categories">
+            <h2>Categories</h2>
+            <div class="filters" id="filters" role="group" aria-label="Filter by mod category"></div>
+          </aside>
+          <div class="catalog-results">
+            <div class="results-heading">
+              <h2 id="category-title">All mods</h2>
+              <p class="results" id="results" role="status"></p>
+            </div>
+            <div id="cards" class="cards"></div>
+            <noscript><p>Enable JavaScript to browse the mod catalog.</p></noscript>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrap install" id="install" aria-labelledby="install-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">GETTING STARTED</p><h2 id="install-title">Installation</h2></div>
+      </div>
+      <a class="button" href="https://github.com/Egezenn/dota2-minify">Minify on GitHub <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+  <dialog class="mod-detail" id="mod-detail" aria-labelledby="detail-title">
+    <form method="dialog"><button class="button detail-close" type="submit" autofocus>Close</button></form>
+    <div id="detail-content"></div>
+  </dialog>
+  <footer class="footer"><div class="wrap footer-inner"><span>ripDZL / Dota 2 Mods</span><span>Independent fan project · Release preview</span><a href="#top">Back to top ↑</a></div></footer>
+</body>
+</html>
