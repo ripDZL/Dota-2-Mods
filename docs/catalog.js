@@ -57,12 +57,31 @@ function showDetails(mod) {
     for (const edition of mod.editions) {
       const item = element("li");
       const link = element("a", "edition-link");
-      link.href = edition.release;
-      link.append(element("strong", "", edition.name + " · " + edition.version), element("span", "", edition.summary));
+      link.href = edition.file ? mod.downloadBase + edition.file : edition.release;
+
+      if (edition.image) {
+        const image = element("img", "edition-preview");
+        image.src = "assets/" + edition.image;
+        image.alt = "";
+        image.loading = "lazy";
+        link.classList.add("has-preview");
+        link.append(image);
+      }
+
+      const copy = element("span", "edition-copy");
+      copy.append(element("strong", "", edition.name + " · " + edition.version));
+      if (edition.summary) copy.append(element("span", "", edition.summary));
+      if (edition.file) copy.append(element("span", "edition-action", "Download ZIP"));
+      link.append(copy);
       item.append(link);
       editions.append(item);
     }
-    content.append(element("h3", "", "Editions on GitHub"), editions);
+    content.append(element("h3", "", mod.editionsHeading ?? "Editions on GitHub"), editions);
+    if (mod.downloadBase) {
+      const release = element("a", "button detail-download", "View collection on GitHub");
+      release.href = mod.release;
+      content.append(release);
+    }
   } else {
     const release = element("a", "button detail-download", "Downloads on GitHub");
     release.href = mod.release;
@@ -71,6 +90,7 @@ function showDetails(mod) {
 
   detailContent.replaceChildren(makeMedia(mod), content);
   dialog.showModal();
+  dialog.scrollTop = 0;
 }
 
 function makeCard(mod) {

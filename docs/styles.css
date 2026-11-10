@@ -167,8 +167,18 @@ nav a:hover, .footer a:hover { color: var(--accent); }
   color: var(--text);
 }
 .mod-detail::backdrop { background: #09070ebd; }
-.mod-detail form { position: absolute; top: 11px; right: 11px; z-index: 1; }
-.detail-close { background: var(--page); }
+.mod-detail form {
+  position: sticky;
+  top: 11px;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 0;
+  padding-right: 11px;
+  pointer-events: none;
+}
+.detail-close { background: var(--page); pointer-events: auto; }
 .mod-detail .card-media { border-radius: 24px 24px 0 0; }
 .mod-detail .card-media img { object-fit: contain; }
 .detail-copy { padding: 20px 24px 25px; }
@@ -177,10 +187,14 @@ nav a:hover, .footer a:hover { color: var(--accent); }
 .detail-copy p { margin-top: 8px; color: var(--muted); }
 .detail-download { margin-top: 16px; background: var(--active); }
 .detail-editions { display: grid; gap: 7px; padding: 0; margin: 8px 0 0; list-style: none; }
-.edition-link { display: grid; gap: 3px; padding: 9px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--raised); }
+.edition-link { display: grid; padding: 9px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--raised); }
 .edition-link:hover { border-color: var(--accent); }
-.edition-link strong { color: var(--accent); font-size: .88rem; }
-.edition-link span { color: var(--muted); font-size: .83rem; }
+.edition-link.has-preview { grid-template-columns: minmax(0, 42%) minmax(0, 1fr); align-items: center; gap: 12px; padding: 8px; }
+.edition-preview { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; border-radius: 7px; background: var(--page); }
+.edition-copy { display: grid; gap: 3px; }
+.edition-copy strong { color: var(--accent); font-size: .88rem; }
+.edition-copy > span { color: var(--muted); font-size: .83rem; }
+.edition-copy > .edition-action { color: var(--text); }
 .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 10px 25px; margin-bottom: 16px; }
 .section-heading h2 { margin-top: 2px; font-size: clamp(1.6rem, 3.6vw, 2.25rem); line-height: 1.2; letter-spacing: -.038em; }
 .install { padding-block: 25px 33px; border-top: 1px solid var(--line); }

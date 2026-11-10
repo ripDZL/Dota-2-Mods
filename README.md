@@ -29,7 +29,7 @@ Open a mod’s release for its download and compatibility notes.
 
 | Mod | Edition | Overview |
 | --- | --- | --- |
-| **[Rank Medal Collections](https://github.com/ripDZL/Dota-2-Mods/releases/tag/rank-medals-collection)** | 14 styles | Aetherforged, PULSE Mono, STRIKE, ASCENT, and the ten ELITE designs. |
+| **[Rank Medal Collections](https://github.com/ripDZL/Dota-2-Mods/releases/tag/rank-medals-collection)** | 14 individual ZIPs | Aetherforged, PULSE Mono, STRIKE, ASCENT, and the ten ELITE designs. |
 
 ### Effects
 

@@ -97,10 +97,98 @@ const mods = [
     "version": "14 styles",
     "status": "Packaged",
     "summary": "Fourteen rank medal styles with native compact icons and progress stars.",
-    "notes": "Aetherforged, PULSE Mono, STRIKE and the ELITE 10 pack, plus the separate ASCENT design. ELITE styles are also available individually. Enable one rank design at a time.",
+    "notes": "Enable one medal style at a time.",
     "type": "Rank Icons",
     "image": "ranks.png",
-    "release": "https://github.com/ripDZL/Dota-2-Mods/releases/tag/rank-medals-collection"
+    "release": "https://github.com/ripDZL/Dota-2-Mods/releases/tag/rank-medals-collection",
+    "editionsHeading": "Individual medal packs",
+    "downloadBase": "https://github.com/ripDZL/Dota-2-Mods/releases/download/rank-medals-collection/",
+    "editions": [
+      {
+        "name": "AEROFORGE",
+        "version": "v1.0.0",
+        "image": "rank-medals/aeroforge.webp",
+        "file": "D2PFX-RANKS-AEROFORGE-Competitive-v1.0.0.zip"
+      },
+      {
+        "name": "Aetherforged HD",
+        "version": "v0.1.4",
+        "image": "rank-medals/aetherforged-hd.webp",
+        "file": "D2PFX-RANKS-Aetherforged-HD-v0.1.4.zip"
+      },
+      {
+        "name": "ASCENT",
+        "version": "v0.1.0",
+        "image": "rank-medals/ascent.webp",
+        "file": "D2PFX-RANKS-ASCENT-Competitive-v0.1.0.zip"
+      },
+      {
+        "name": "BASTION",
+        "version": "v1.0.0",
+        "image": "rank-medals/bastion.webp",
+        "file": "D2PFX-RANKS-BASTION-Competitive-v1.0.0.zip"
+      },
+      {
+        "name": "CROWNWORK",
+        "version": "v1.0.0",
+        "image": "rank-medals/crownwork.webp",
+        "file": "D2PFX-RANKS-CROWNWORK-Competitive-v1.0.0.zip"
+      },
+      {
+        "name": "EQUINOX",
+        "version": "v1.0.0",
+        "image": "rank-medals/equinox.webp",
+        "file": "D2PFX-RANKS-EQUINOX-Competitive-v1.0.0.zip"
+      },
+      {
+        "name": "KINETIC",
+        "version": "v1.0.0",
+        "image": "rank-medals/kinetic.webp",
+        "file": "D2PFX-RANKS-KINETIC-Competitive-v1.0.0.zip"
+      },
+      {
+        "name": "LOTUS",
+        "version": "v1.0.0",
+        "image": "rank-medals/lotus.webp",
+        "file": "D2PFX-RANKS-LOTUS-Competitive-v1.0.0.zip"
+      },
+      {
+        "name": "NOCTURNE",
+        "version": "v1.0.0",
+        "image": "rank-medals/nocturne.webp",
+        "file": "D2PFX-RANKS-NOCTURNE-Competitive-v1.0.0.zip"
+      },
+      {
+        "name": "PRISMATIC",
+        "version": "v1.0.0",
+        "image": "rank-medals/prismatic.webp",
+        "file": "D2PFX-RANKS-PRISMATIC-Competitive-v1.0.0.zip"
+      },
+      {
+        "name": "PULSE Mono",
+        "version": "v0.3.0",
+        "image": "rank-medals/pulse-mono.webp",
+        "file": "D2PFX-RANKS-PULSE-Mono-Competitive-v0.3.0.zip"
+      },
+      {
+        "name": "SOLARIS",
+        "version": "v1.0.0",
+        "image": "rank-medals/solaris.webp",
+        "file": "D2PFX-RANKS-SOLARIS-Competitive-v1.0.0.zip"
+      },
+      {
+        "name": "STRIKE",
+        "version": "v0.2.0",
+        "image": "rank-medals/strike.webp",
+        "file": "D2PFX-RANKS-STRIKE-Competitive-v0.2.0.zip"
+      },
+      {
+        "name": "VALOR",
+        "version": "v1.0.0",
+        "image": "rank-medals/valor.webp",
+        "file": "D2PFX-RANKS-VALOR-Competitive-v1.0.0.zip"
+      }
+    ]
   },
   {
     "id": "24",
