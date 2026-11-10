@@ -176,6 +176,11 @@ nav a:hover, .footer a:hover { color: var(--accent); }
 .detail-copy h3 { margin-top: 16px; font-size: 1rem; }
 .detail-copy p { margin-top: 8px; color: var(--muted); }
 .detail-download { margin-top: 16px; background: var(--active); }
+.detail-editions { display: grid; gap: 7px; padding: 0; margin: 8px 0 0; list-style: none; }
+.edition-link { display: grid; gap: 3px; padding: 9px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--raised); }
+.edition-link:hover { border-color: var(--accent); }
+.edition-link strong { color: var(--accent); font-size: .88rem; }
+.edition-link span { color: var(--muted); font-size: .83rem; }
 .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 10px 25px; margin-bottom: 16px; }
 .section-heading h2 { margin-top: 2px; font-size: clamp(1.6rem, 3.6vw, 2.25rem); line-height: 1.2; letter-spacing: -.038em; }
 .install { padding-block: 25px 33px; border-top: 1px solid var(--line); }

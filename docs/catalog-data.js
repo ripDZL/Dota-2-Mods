@@ -3,13 +3,32 @@ const mods = [
     "id": "01",
     "category": "Models",
     "title": "HoN Nyan Cat Courier",
-    "version": "Classic v0.1.2-test",
+    "version": "3 editions",
     "status": "Test",
     "summary": "HoN’s courier with a rainbow trail and popping stars in flight.",
-    "notes": "Classic is the first release candidate. Its rainbow trail and popping stars were confirmed in-game. HD v0.2.0 and Fur v0.3.4 are separate test builds.",
+    "notes": "Use one edition at a time. Classic’s flying rainbow and stars were confirmed in-game. HD and Fur still need an in-game retest.",
     "type": "Couriers",
     "image": "nyan-classic.jpg",
-    "release": "https://github.com/ripDZL/Dota-2-Mods/releases/tag/hon-nyan-cat-classic-v0.1.2-test"
+    "editions": [
+      {
+        "name": "Classic",
+        "version": "v0.1.2-test",
+        "summary": "Original ground and flying courier with the rainbow trail and popping stars.",
+        "release": "https://github.com/ripDZL/Dota-2-Mods/releases/tag/hon-nyan-cat-classic-v0.1.2-test"
+      },
+      {
+        "name": "HD",
+        "version": "v0.2.0-test",
+        "summary": "Orange HD ground model with the Classic flying courier and effects.",
+        "release": "https://github.com/ripDZL/Dota-2-Mods/releases/tag/hon-nyan-cat-hd-v0.2.0-test"
+      },
+      {
+        "name": "Fur",
+        "version": "v0.3.4-test",
+        "summary": "3D ground fur and a flat rainbow ribbon during flight.",
+        "release": "https://github.com/ripDZL/Dota-2-Mods/releases/tag/hon-nyan-cat-fur-v0.3.4-test"
+      }
+    ]
   },
   {
     "id": "03",

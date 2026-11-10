@@ -14,7 +14,7 @@ Open a mod’s release for its download and compatibility notes.
 
 | Mod | Edition | Overview |
 | --- | --- | --- |
-| **[HoN Nyan Cat Courier](https://github.com/ripDZL/Dota-2-Mods/releases/tag/hon-nyan-cat-classic-v0.1.2-test)** | Classic v0.1.2-test | Rainbow trail and popping stars in flight. |
+| **HoN Nyan Cat Courier** | [Classic v0.1.2-test](https://github.com/ripDZL/Dota-2-Mods/releases/tag/hon-nyan-cat-classic-v0.1.2-test) · [HD v0.2.0-test](https://github.com/ripDZL/Dota-2-Mods/releases/tag/hon-nyan-cat-hd-v0.2.0-test) · [Fur v0.3.4-test](https://github.com/ripDZL/Dota-2-Mods/releases/tag/hon-nyan-cat-fur-v0.3.4-test) | Original courier, HD ground model, or 3D fur with a flat rainbow. |
 | **[Kongor over Roshan](https://github.com/ripDZL/Dota-2-Mods/releases/tag/kongor-roshan-hd-v0.2.1)** | HD v0.2.1 | HoN’s Kongor with the HD skull artwork. |
 | **[Witch Slayer over Lion](https://github.com/ripDZL/Dota-2-Mods/releases/tag/witch-slayer-lion-v0.1.5)** | v0.1.5 | Animated Graveyard, brighter Mana Drain, and a revised Silver Bullet impact. |
 

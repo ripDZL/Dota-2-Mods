@@ -52,9 +52,22 @@ function showDetails(mod) {
 
   const content = element("div", "detail-copy");
   content.append(title, metadata, element("p", "", mod.summary), element("h3", "", "Release notes"), element("p", "", mod.notes));
-  const release = element("a", "button detail-download", "Downloads on GitHub");
-  release.href = mod.release;
-  content.append(release);
+  if (mod.editions) {
+    const editions = element("ul", "detail-editions");
+    for (const edition of mod.editions) {
+      const item = element("li");
+      const link = element("a", "edition-link");
+      link.href = edition.release;
+      link.append(element("strong", "", edition.name + " · " + edition.version), element("span", "", edition.summary));
+      item.append(link);
+      editions.append(item);
+    }
+    content.append(element("h3", "", "Editions on GitHub"), editions);
+  } else {
+    const release = element("a", "button detail-download", "Downloads on GitHub");
+    release.href = mod.release;
+    content.append(release);
+  }
 
   detailContent.replaceChildren(makeMedia(mod), content);
   dialog.showModal();
@@ -83,7 +96,8 @@ function makeCard(mod) {
 function render() {
   const query = search.value.trim().toLocaleLowerCase();
   const shown = mods.filter(mod => {
-    const searchable = [mod.title, mod.type, mod.category, mod.credit ?? "ripDZL", mod.version, mod.summary, mod.notes].join(" ").toLocaleLowerCase();
+    const editionTerms = mod.editions?.map(edition => edition.name + " " + edition.version) ?? [];
+    const searchable = [mod.title, mod.type, mod.category, mod.credit ?? "ripDZL", mod.version, mod.summary, mod.notes, ...editionTerms].join(" ").toLocaleLowerCase();
     return (category === "All" || mod.category === category) && searchable.includes(query);
   });
   cards.replaceChildren(...shown.map(makeCard));
