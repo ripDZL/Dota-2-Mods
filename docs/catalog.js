@@ -143,4 +143,32 @@ for (const name of ["All", "Models", "Terrain", "Interface", "Effects", "Audio"]
 
 search.addEventListener("input", render);
 
+async function refreshDownloadCount() {
+  const url = "https://api.github.com/repos/ripDZL/Dota-2-Mods/releases";
+  const pageSize = 100;
+  let total = 0;
+  try {
+    const signal = AbortSignal.timeout(7000);
+    for (let page = 1; ; page++) {
+      const response = await fetch(`${url}?per_page=${pageSize}&page=${page}`, { signal });
+      if (!response.ok) return;
+      const releases = await response.json();
+      if (!Array.isArray(releases)) return;
+      for (const release of releases) {
+        if (release.draft) continue;
+        for (const asset of release.assets) {
+          if (!Number.isSafeInteger(asset.download_count) || asset.download_count < 0) return;
+          total += asset.download_count;
+        }
+      }
+      if (releases.length < pageSize) break;
+    }
+    document.querySelector("#download-count").textContent = total.toLocaleString();
+    document.querySelector("#download-source").textContent = "GitHub Releases ↗";
+  } catch {
+    // The dated count in the page stays visible if GitHub is unavailable.
+  }
+}
+
 render();
+refreshDownloadCount();

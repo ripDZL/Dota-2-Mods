@@ -1,14 +1,20 @@
+<div align="center">
+
 # Dota 2 Mods
 
-**A curated collection of client-side Dota 2 mods by ripDZL.**
+**A mod collection by ripDZL, packaged for Minify.**
 
-Heroes of Newerth conversions, custom terrain, rank medals, effects, and audio packs.
+Heroes of Newerth conversions, custom terrain, rank medals, effects, and audio.
 
-[Browse the mod website](https://ripdzl.github.io/Dota-2-Mods/) · [Mod library](#mod-library) · [Installation](#installation) · [GitHub Releases](https://github.com/ripDZL/Dota-2-Mods/releases) · [Report an issue](https://github.com/ripDZL/Dota-2-Mods/issues)
+[![GitHub release downloads](https://img.shields.io/github/downloads/ripDZL/Dota-2-Mods/total?label=release%20downloads&color=7254a2&style=flat-square)](https://github.com/ripDZL/Dota-2-Mods/releases)
+
+**[Browse the catalog](https://ripdzl.github.io/Dota-2-Mods/)** · [GitHub Releases](https://github.com/ripDZL/Dota-2-Mods/releases) · [Installation](#installation) · [Report an issue](https://github.com/ripDZL/Dota-2-Mods/issues)
+
+</div>
 
 ## Mod library
 
-Open a mod’s release for its download and compatibility notes.
+Release pages include ZIP downloads, version details, and compatibility notes.
 
 ### Models
 
